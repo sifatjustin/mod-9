@@ -20,10 +20,21 @@
     border: 0;
 }
 
+.text-light-gray {
+
+    color: #727272;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
 /*main styles*/
 main {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 70px auto;
 }
 
 
@@ -43,10 +54,7 @@ nav>ul {
 
 }
 
-.nav-title {
-    font-size: 2rem;
-    font-weight: 700;
-}
+
 
 nav li {
     list-style: none;
@@ -72,14 +80,6 @@ nav li a {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
-}
-
-.banner-description {
-    color: #727272;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-
 }
 
 .banner img {
@@ -121,7 +121,46 @@ nav li a {
 
 }
 
+/*facts section*/
+.facts-card-container {
+    display: flex;
+    justify-content: space-around;
+    
 
+}
+.facts-card-container .card-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 5px;
+}
+
+.facts-card-container .card {
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    padding: 30px;
+}
+
+.facts-card-container .card-stat {
+    font-size: 2.8rem;
+    color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 
 
 
@@ -136,8 +175,23 @@ nav li a {
         padding: 10px;
     }
 
-    nav {
+    nav,
+    .teams-container ,
+    .facts-card-container, 
+    .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .teams-img-container {
+        grid-template-columns: 1fr;
+    }
+
+    .teams-content , .facts-card-container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .facts-card-container{
+        gap: 20px;
     }
 }
 
@@ -148,7 +202,12 @@ nav li a {
         padding: 35px;
     }
 
-    nav {
+    nav,
+    .teams-container ,
+    .sponsors-img-container{
         flex-direction: column;
+    }
+    .sponsors-img-container{
+        gap: 40px;
     }
 }
